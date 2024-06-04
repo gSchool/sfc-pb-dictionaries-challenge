@@ -5,7 +5,7 @@ from dictionaries_practice import meal_1, meal_2, meal_3, title, meal_length, me
 
 
 class TestDictionaryProblems(unittest.TestCase):
-
+    
   def test_meal_1(self):
     self.assertEqual("title" in meal_1, True)
     self.assertEqual("description" in meal_1, True)
@@ -31,8 +31,3 @@ class TestDictionaryProblems(unittest.TestCase):
 
   def test_meal_8(self):
     self.assertEqual(key_count, 4)
-
-
-if __name__ == '__main__':
-  failfast = len(sys.argv) > 1 and sys.argv[1] == 'ff'
-  unittest.main(failfast=failfast)

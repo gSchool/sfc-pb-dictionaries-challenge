@@ -10,6 +10,6 @@ problem should be completed.
 2. You will write your code in the `dictionaries_practice.py` file
 3. There are tests in the `tests.py` file, these should not be edited
 4. To check if you completed a problem run the tests:
-  * run all tests with the command `python tests.py`
-  * run all tests until the first error `python tests.py ff`
-  * run a specific test `python tests.py TestDictionaryProblems.<name_of_test>`
+  * run all tests with the command `python -m unittest`
+  * run all tests until the first error `python -m unittest -f`
+  * run a specific test `python -m unittest tests.TestDictionaryProblems.<name_of_test>`
