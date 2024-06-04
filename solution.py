@@ -12,7 +12,7 @@ ONLY add new lines after a "your code here" comment that creates, edits, or dele
 ## that are a string, string, and float respectively
 
 # your code here
-meal_1 = None
+meal_1 = { "title": "Spaghetti", "description": "Pasta with tomato sauce", "cost": 10.00 }
 
 
 ## update_meal
@@ -21,7 +21,7 @@ meal_1 = None
 
 meal_2 = { "title": "Spaghetti", "description": "Pasta with tomato sauce", "cost": 10.00 }
 # your code here
-
+meal_2['cost'] = 12.00
 
 
 ## delete_description
@@ -30,7 +30,7 @@ meal_2 = { "title": "Spaghetti", "description": "Pasta with tomato sauce", "cost
 
 meal_3 = { "title": "Spaghetti", "description": "Pasta with tomato sauce", "cost": 12.00 }
 # your code here
-
+del meal_3['description']
 
 
 ## get_title
@@ -39,7 +39,7 @@ meal_3 = { "title": "Spaghetti", "description": "Pasta with tomato sauce", "cost
 
 meal_4 = { "title": "Spaghetti", "description": "Pasta with tomato sauce", "cost": 12.00 }
 # your code here
-title = None
+title = meal_4['title']
 
 
 ## get_length
@@ -48,7 +48,7 @@ title = None
 
 meal_5 = { "title": "Spaghetti", "description": "Pasta with tomato sauce", "cost": 12.00 }
 # your code here
-meal_length = None
+meal_length = len(meal_5)
 
 
 ## update_meal
@@ -58,7 +58,7 @@ meal_length = None
 meal_6 = { "title": "Spaghetti", "description": "Pasta with tomato sauce", "cost": 12.00 }
 meal_6_new = { "title": "Spicy Meatball Spaghetti", "description": "Pasta with some zing" }
 # your code here
-
+meal_6.update(meal_6_new)
 
 
 ## translate_meal
@@ -70,10 +70,10 @@ meal_7 = { "title": ["Arroz", "con", "Pollo"], "description": "Que rico", "cost"
 translator = { "Leche": "Milk", "Arroz": "Rice", "del": "of the", "Tigre": "Tiger", "con": "with",  "Pollo": "Chicken" }
 translated_meal_7 = ""
 # your code here
-
-
-
-
+for word in meal_7['title']:
+  translated_meal_7 += translator[word]
+  if word != meal_7['title'][-1]:
+    translated_meal_7 += " "
 
 
 ## count_keys
@@ -83,8 +83,8 @@ translated_meal_7 = ""
 meal_8 = { "title": "Spaghetti", "description": "Pasta with tomato sauce", "cost": 12.00, "size": "Lg" }
 key_count = 0
 # your code here
-
-
+for key in meal_8:
+  key_count += 1
 
 
 
